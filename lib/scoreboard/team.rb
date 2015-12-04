@@ -1,21 +1,22 @@
 module Scoreboard
+  attr_writer :name, :score
   class Team
     def initialize
       @score = 0
-      @name = 'NA'
+      @name = "NA"
     end
 
-    def set_name name
-      @name = name
-    end
+    # def name=(name)
+    #   @name = name
+    # end
 
-    def name
-      @name
-    end
+    # def name
+    #   @name
+    # end
 
-    def score
-      @score
-    end
+    # def score
+    #   @score
+    # end
 
     def field_goal
       @score += 3
