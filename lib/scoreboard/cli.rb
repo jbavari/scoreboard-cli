@@ -44,10 +44,10 @@ module Scoreboard
             puts "Scoreboard: #{football_scoreboard.score}"
           end
         # rubocop:disable UselessAssignment
-        rescue StandardError => ex
-          # rubocop:enable UselessAssignment
+        rescue Exception => ex
           # Only way to continue from here is just catch an Exception.
-          # Ignore Rubocop warning
+          # Ignore Rubocop warning, unfortunately catching only StandardError 
+          # doesnt rescue from the error.
           puts "You've ended the game!"
         end
 
