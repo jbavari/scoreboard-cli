@@ -4,9 +4,19 @@
 
 # Scoreboard
 
+Install the gem: `gem install scoreboard`.
+
+## Dive in the code
+
 To get started, clone this repo.
 
-`bundle install`
-`bin/scoreboard`
+```
+bundle install
+bin/scoreboard
+```
 
 Score your teams.
+
+## API
+
+The API server sits separately from this repo, and lives [scoreboard-api repo](https://github.com/jbavari/scoreboard-api).
