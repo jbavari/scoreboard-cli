@@ -1,6 +1,7 @@
 module Scoreboard
-  attr_writer :name, :score
   class Team
+    attr_reader :name, :score
+    attr_writer :name, :score
     def initialize
       @score = 0
       @name = "NA"
