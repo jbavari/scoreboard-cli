@@ -20,3 +20,8 @@ Score your teams.
 ## API
 
 The API server sits separately from this repo, and lives [scoreboard-api repo](https://github.com/jbavari/scoreboard-api).
+
+
+## Dashboard
+
+There is an accompanying dashboard that gets data from this tool, see the [scoreboard-dashboard](https://github.com/jbavari/scoreboard-dashboard).
