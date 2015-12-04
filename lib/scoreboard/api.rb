@@ -11,7 +11,8 @@ module Scoreboard
       uri = URI.parse("http://localhost:9393/api/v1/results")
 
       # Shortcut
-      response = Net::HTTP.post_form(uri,
+      response = Net::HTTP.post_form(
+        uri,
         "home_team"     => data.home_team.name,
         "home_score"    => data.home_team.score,
         "visitor_team"  => data.visitor_team.name,

@@ -43,17 +43,25 @@ module Scoreboard
 
             puts "Scoreboard: #{football_scoreboard.score}"
           end
-        rescue Exception => ex
-          puts "Was error: #{ex}"
+        # rubocop:disable UselessAssignment
+        rescue StandardError => ex
+          # rubocop:enable UselessAssignment
+          # Only way to continue from here is just catch an Exception.
+          # Ignore Rubocop warning
+          puts "You've ended the game!"
         end
 
+        end_game
+      end
+
+      def end_game
         puts "Thanks for playing! Were sending the game data."
         Api.send_data(football_scoreboard)
         show_dashboard_url
       end
 
       def show_dashboard_url
-        puts "Thanks for playing! View the scoreboard dashboard: #{Api.dashboard_url}"
+        puts "View the scoreboard dashboard: #{Api.dashboard_url}"
         puts "Weve sent your scoreboard data to our servers! Thanks for submitting!"
       end
 
@@ -76,7 +84,7 @@ module Scoreboard
 
       begin
         begin_reading_scores
-      rescue Exception => ex
+      rescue StandardError => ex
         puts "The game has ended. Final scores: #{football_scoreboard.score} - #{ex}"
       end
     end
