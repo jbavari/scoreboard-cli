@@ -6,18 +6,6 @@ module Scoreboard
       @name = "NA"
     end
 
-    # def name=(name)
-    #   @name = name
-    # end
-
-    # def name
-    #   @name
-    # end
-
-    # def score
-    #   @score
-    # end
-
     def field_goal
       @score += 3
     end
