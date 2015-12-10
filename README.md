@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/jbavari/scoreboard-cli/badges/gpa.svg)](https://codeclimate.com/github/jbavari/scoreboard-cli) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jbavari/scoreboard-cli/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jbavari/scoreboard-cli/?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/grade/ed148b6b39084a2d980fa41d721b4e49)](https://www.codacy.com/app/jbavari/scoreboard-cli) [![Build Status](https://scrutinizer-ci.com/g/jbavari/scoreboard-cli/badges/build.png?b=master)](https://scrutinizer-ci.com/g/jbavari/scoreboard-cli/build-status/master) 
+[![Gem Version](https://badge.fury.io/rb/scoreboard.svg)](https://badge.fury.io/rb/scoreboard) [![Code Climate](https://codeclimate.com/github/jbavari/scoreboard-cli/badges/gpa.svg)](https://codeclimate.com/github/jbavari/scoreboard-cli) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jbavari/scoreboard-cli/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jbavari/scoreboard-cli/?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/grade/ed148b6b39084a2d980fa41d721b4e49)](https://www.codacy.com/app/jbavari/scoreboard-cli) [![Build Status](https://scrutinizer-ci.com/g/jbavari/scoreboard-cli/badges/build.png?b=master)](https://scrutinizer-ci.com/g/jbavari/scoreboard-cli/build-status/master) 
 
 
 
@@ -12,7 +12,7 @@ To get started, clone this repo.
 
 ```
 bundle install
-bin/scoreboard
+bundle exec bin/scoreboard
 ```
 
 Score your teams.
